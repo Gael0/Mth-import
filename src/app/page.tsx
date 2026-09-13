@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Search, Ship, ShieldCheck, MessageCircleUser, MapPin } from "lucide-react";
+import { Search, Ship, ShieldCheck, MessageCircle, MapPin } from "lucide-react";
 import { useCurrency } from "@/lib/currency";
 import ProgressRing from "@/components/ProgressRing";
 
@@ -21,7 +21,7 @@ const FEATURES = [
     text: "Chaque étape est documentée : marchandise chez le fournisseur, conteneur scellé, arrivée port. Zéro zone d'ombre.",
   },
   {
-    icon: MessageCircleUser,
+    icon: MessageCircle,
     title: "Conseiller Humain + Anti-Arnaque",
     text: "Un expert vous répond sur WhatsApp sous 2h. Vérification fournisseur Alibaba/1688 avant chaque paiement.",
   },
