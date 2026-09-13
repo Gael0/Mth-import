@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #fafafa;
+  color: #0a2342;
+  font-family: "Inter", "SF Pro Display", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Carte glassmorphism du design system MTH */
+.card-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid #e5e5e5;
+  border-radius: 24px;
+}
+
+.tracking-tight-hero { letter-spacing: -0.03em; }
+
+/* Ligne pointillée orange style trajet conteneur */
+.route-dash {
+  background-image: linear-gradient(to right, #ff7a00 55%, transparent 45%);
+  background-size: 14px 2px;
+  background-repeat: repeat-x;
+  height: 2px;
+}
+
+::selection { background: #ff7a00; color: #fff; }
